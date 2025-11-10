@@ -24,3 +24,17 @@ project, and how to fix them.
 
 The project 'zuul-better' contains a version of this project with better
 designed class structure. It includes the fixes discussed in the book.
+
+1.  
+    - Text based game only
+    - Help, Go, Quit
+    - Help = shows all different types of commands, Go = go to next room, Quit = Leave game.
+    - 4 rooms
+    - South, North, West, and East?
+2.
+    Game : Creates all of the others classes
+    Parser : Reads the users input.
+    Command : Has all the information of all the commands that are used when you play.
+    Room : Stores all the info on the rooms, meaning their names/location/etc.
+    CommandWords : Has the enumeration of all command words.
+
