@@ -37,4 +37,17 @@ designed class structure. It includes the fixes discussed in the book.
     Command : Has all the information of all the commands that are used when you play.
     Room : Stores all the info on the rooms, meaning their names/location/etc.
     CommandWords : Has the enumeration of all command words.
+3.
+    Find and reach the pod after collection the repair tool since the door is broken, there are traps, timer (barely any oxygen), random objects that block the paths.
+4.
+            Bridge
+              |
+         Staff Room 
+           /     \
+        Files    Pod
+                  |
+                Medbay
 
+
+5.
+    

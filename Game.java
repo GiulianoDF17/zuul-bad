@@ -33,24 +33,24 @@ public class Game
      */
     private void createRooms()
     {
-        Room outside, theater, pub, lab, office;
+        Room bridge, staff, files, medbay, pod;
       
         // create the rooms
-        outside = new Room("outside the main entrance of the university");
-        theater = new Room("in a lecture theater");
-        pub = new Room("in the campus pub");
-        lab = new Room("in a computing lab");
-        office = new Room("in the computing admin office");
+        bridge = new Room("outside the main entrance of the university");
+        staff = new Room("in a lecture theater");
+        files = new Room("in the campus pub");
+        medbay = new Room("in a computing lab");
+        pod = new Room("in the computing admin office");
         
         // initialise room exits
-        outside.setExits(null, theater, lab, pub);
-        theater.setExits(null, null, null, outside);
-        pub.setExits(null, outside, null, null);
-        lab.setExits(outside, office, null, null);
-        office.setExits(null, null, null, lab);
+        bridge.setExits(null, staff, null, null);
+        staff.setExits(bridge, pod, files, null);
+        files.setExits(null, null, null, staff);
+        medbay.setExits(null, null, pod, null);
+        pod.setExits(staff, null, null, medbay); 
 
         // start game outside
-        currentRoom = outside;  
+        currentRoom = bridge;  
     }
 
     /**
